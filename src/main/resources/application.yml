@@ -1,0 +1,18 @@
+spring:
+  application:
+      name: springSecurity
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/java_talks/protocol/openid-connect/certs
+server:
+  port: 8081
+logging:
+  level:
+    org:
+      springframework:
+        security: trace
+
+
+
